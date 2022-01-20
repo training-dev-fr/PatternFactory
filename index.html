@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="tools">
+            <div class="form-field">
+                <label>Champ</label>
+                <select id="field">
+                <option selected disabled>--- Veuillez selectionner une valeur ---</option>
+                <option value="input">Input</option>
+                <option value="select">Select</option>
+                <option value="checkbox">Checkbox</option>
+                <option value="radio">Radio</option>
+                <option value="textarea">Textarea</option>
+            </select>
+            </div>
+            <div class="form-field">
+                <label>Name</label>
+                <input type="text" id="name" autocomplete="off">
+            </div>
+            <div class="form-field">
+                <label>Type</label>
+                <select id="type">
+                <option value="text">Text</option>
+                <option value="email">E-mail</option>
+                <option value="number">Nombre</option>
+            </select>
+            </div>
+            <div class="form-field">
+                <button id="addField">Ajouter le champ</button>
+            </div>
+        </div>
+        <div id="form">
+
+        </div>
+    </div>
+    <script src="Field/Field.js"></script>
+    <script src="Field/Input.js"></script>
+    <script src="Field/Checkbox.js"></script>
+    <script src="Field/Radio.js"></script>
+    <script src="Field/Select.js"></script>
+    <script src="Field/TextArea.js"></script>
+    <script src="FormFactory.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

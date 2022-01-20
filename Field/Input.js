@@ -1,0 +1,17 @@
+class Input extends Field {
+    constructor(options) {
+        super(options);
+        this.type = "text";
+        this.name = "defaultName";
+        this.required = false;
+        options && Object.assign(this, options);
+        this.create();
+    }
+
+    create() {
+        this.element = document.createElement("input");
+        this.element.type = this.type;
+        this.element.name = this.name;
+    }
+
+}
